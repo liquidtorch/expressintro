@@ -1,0 +1,24 @@
+{
+  "name": "expressintro",
+  "version": "1.0.0",
+  "description": "Todays lecture is on express. The docs for express can be found here - https://expressjs.com/",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/troyamelotte/expressintro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/troyamelotte/expressintro/issues"
+  },
+  "homepage": "https://github.com/troyamelotte/expressintro#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

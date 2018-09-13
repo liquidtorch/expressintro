@@ -4,12 +4,15 @@ var port = process.env.PORT || 8000;
 
 app.get('/guests', function(req, res) {
   var guests = ['Mary', 'Don'];
-  res.send(guests);
+  res.json(guests);
 });
-
+        // /guests/89
+        // /guests/10
+        // /guests/hello
 app.post('/guests/:id', function(req, res) {
-  let str = `You requested for the id - ${req.params.id}`
-  res.send(str);
+  res.json({
+    id: req.params.id
+  });
 });
 
 app.use(function(req, res) {

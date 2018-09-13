@@ -1,10 +1,10 @@
-var express = require('express');
-var app = express();
-var port = process.env.PORT || 8000;
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 8000;
 
 app.get('/guests', function(req, res) {
-  var guests = ['Mary', 'Don'];
-  res.send(guests);
+  let guests = ['Mary', 'Don'];
+  res.json(guests);
 });
 
 app.use(function(req, res) {
